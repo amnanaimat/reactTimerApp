@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 module.exports = {
 	entry :['script!jquery/dist/jquery.min.js',
-	'script!foundation-sites/dist/foundation.min.js',
+	'script!foundation-sites/dist/js/foundation.min.js',
 	'./app/app.jsx'],
 	externals:{
 		jquery: 'jQuery'
@@ -20,15 +20,9 @@ module.exports = {
 		root : __dirname,
 		alias :{
 			Main: 'app/components/main.jsx',
-			Nav: 'app/components/nav.jsx',
-			Weather: 'app/components/weather.jsx',
-			Examples: 'app/components/examples.jsx',
-			About: 'app/components/about.jsx',
-			WeatherForm: 'app/components/WeatherForm.jsx',
-			WeatherMessage: 'app/components/WeatherMessage.jsx',
-			ErrorModel: 'app/components/errorModel.jsx',
-			ApplicationCustomStyle: 'app/styles/app.css',
-			openWeatherMap: 'app/api/openWeatherMap.jsx',
+			ApplicationCustomStyle: 'app/styles/app.scss',
+			Nav : 'app/components/nav.jsx'
+		
 		},
 		extensions: ['','.js','.jsx']
 	},
