@@ -1,1 +1,1 @@
-Simple Weather Application Using React.
+Simple Timer Application Using React.
