@@ -1,12 +1,12 @@
 var  React =require('react');
-
+var  Clock =require('Clock');
 
 
 var Countdown = (props)=> {
 	return (
 			<div>
 			
-			<p>Countdown component</p>
+			<Clock totalSeconds={670}/>
 			
 		
 			</div>
