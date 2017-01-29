@@ -31,6 +31,15 @@ describe('CountDownForm',()=>{
 		TestUtil.Simulate.submit($el.find('form')[0]);
 		expect(spy).toNotHaveBeenCalled();
 	});
+	it('should not called with empaty input field',()=>{
+		var spy = expect.createSpy();
+		var countDownFrom = TestUtil.renderIntoDocument(<CountDownForm onSetCountDown={spy}/>);
+		
+		var $el = $(ReactDOM.findDOMNode(countDownFrom));
+		countDownFrom.refs.seconds.value = '';
+		TestUtil.Simulate.submit($el.find('form')[0]);
+		expect(spy).toNotHaveBeenCalled();
+	});
 	
 	
 })
